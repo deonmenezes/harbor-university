@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Georgia", serif; background: #faf6ee; color: #1a0b0b; line-height: 1.6; }
+a { color: #8b1a1a; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.announce { background: #8b1a1a; color: #f3d7a4; font-size: 0.82rem; text-align: center; padding: 0.45rem 1rem; letter-spacing: 0.03em; font-family: "Georgia", serif; }
+
+.top { display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 2.5rem; background: #ffffff; border-bottom: 3px solid #d4a017; position: sticky; top: 0; z-index: 10; }
+.brand { font-weight: 700; font-size: 1.35rem; color: #8b1a1a; letter-spacing: 0.02em; font-family: "Playfair Display", "Times New Roman", Georgia, serif; display: flex; align-items: center; gap: 0.75rem; }
+.crest { width: 42px; height: 42px; background: #8b1a1a; color: #d4a017; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: "Playfair Display", "Times New Roman", Georgia, serif; font-size: 1.05rem; border: 2px solid #d4a017; }
+.brand-sub { display: block; font-size: 0.7rem; color: #6b5757; letter-spacing: 0.2em; font-weight: 400; text-transform: uppercase; font-family: "Georgia", serif; margin-top: 2px; }
+nav { font-family: "Georgia", serif; }
+nav a { margin-left: 1.75rem; color: #1a0b0b; font-size: 0.92rem; font-weight: 500; }
+nav a:hover { color: #d4a017; text-decoration: none; }
+.cta { background: #8b1a1a; color: #ffffff !important; padding: 0.55rem 1.25rem; border-radius: 3px; border: 1px solid #8b1a1a; }
+.cta:hover { background: #d4a017; border-color: #d4a017; text-decoration: none; }
+
+main { max-width: 1140px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
+.hero { padding: 5rem 2rem 4.5rem; text-align: center; background: linear-gradient(135deg, #8b1a1a 0%, #a83030 100%); color: #ffffff; margin: -2rem -2rem 0; border-bottom: 3px solid #d4a017; }
+.hero h1 { font-family: "Playfair Display", "Times New Roman", Georgia, serif; font-size: 3rem; line-height: 1.15; margin: 0 0 1.25rem; color: #ffffff; font-weight: 400; letter-spacing: -0.01em; }
+.hero .est { font-size: 0.85rem; color: #d4a017; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 1.5rem; font-family: "Georgia", serif; }
+.hero p.lead { font-size: 1.15rem; color: #f3d7d7; max-width: 680px; margin: 0 auto 2rem; font-family: "Playfair Display", "Times New Roman", Georgia, serif; font-style: italic; }
+.hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero-actions a { padding: 0.85rem 2rem; border-radius: 3px; font-weight: 500; font-family: "Georgia", serif; font-size: 0.95rem; letter-spacing: 0.02em; }
+.btn-primary { background: #d4a017; color: white !important; border: 1px solid #d4a017; }
+.btn-primary:hover { background: #d4a017; opacity: 0.9; text-decoration: none; }
+.btn-ghost { background: transparent; color: #ffffff !important; border: 1px solid #ffffff; }
+.btn-ghost:hover { background: #ffffff; color: #8b1a1a !important; text-decoration: none; }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 4rem 0; }
+.feature { padding: 2rem 1.75rem; border: 1px solid #e5ddc8; border-top: 3px solid #d4a017; background: #ffffff; }
+.feature h3 { margin: 0 0 0.75rem; font-size: 1.15rem; font-family: "Playfair Display", "Times New Roman", Georgia, serif; color: #8b1a1a; }
+.feature p { margin: 0; color: #6b5757; font-size: 0.95rem; }
+.icon { width: 44px; height: 44px; background: #f6e4b8; color: #d4a017; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; margin-bottom: 1.25rem; border: 1px solid #d4a017; }
+
+.section-title { text-align: center; font-family: "Playfair Display", "Times New Roman", Georgia, serif; margin: 3.5rem 0 2rem; }
+.section-title h2 { color: #8b1a1a; margin: 0; font-weight: 400; font-size: 2rem; }
+.section-title .divider { width: 60px; height: 2px; background: #d4a017; margin: 1rem auto; }
+.section-title p { color: #6b5757; font-style: italic; margin: 0; }
+
+h1 { color: #8b1a1a; font-weight: 400; font-family: "Playfair Display", "Times New Roman", Georgia, serif; }
+h2 { color: #8b1a1a; margin-top: 2.5rem; font-weight: 400; font-family: "Playfair Display", "Times New Roman", Georgia, serif; }
+h3 { font-family: "Playfair Display", "Times New Roman", Georgia, serif; color: #8b1a1a; }
+
+.card { background: #ffffff; border: 1px solid #e5ddc8; padding: 1.75rem; margin: 1.25rem 0; }
+
+input, textarea, button, select { font-family: "Georgia", serif; padding: 0.65rem 0.9rem; border-radius: 3px; border: 1px solid #e5ddc8; background: #ffffff; color: #1a0b0b; font-size: 0.95rem; }
+input:focus, textarea:focus { outline: 2px solid #d4a017; border-color: #d4a017; }
+button { background: #8b1a1a; border-color: #8b1a1a; color: white; cursor: pointer; font-weight: 500; letter-spacing: 0.02em; }
+button:hover { background: #d4a017; border-color: #d4a017; }
+button:disabled { background: #8b94a0; border-color: #8b94a0; cursor: not-allowed; }
+label { display: block; margin: 0.9rem 0 0.35rem; font-size: 0.85rem; color: #6b5757; font-weight: 600; font-family: "Georgia", serif; letter-spacing: 0.05em; text-transform: uppercase; }
+
+pre { background: #8b1a1a; color: #d4a017; padding: 1rem; border-radius: 3px; overflow-x: auto; font-size: 0.85rem; font-family: "Courier New", monospace; }
+
+.testimonial { padding: 1.75rem; border-left: 4px solid #d4a017; background: #ffffff; margin: 1.25rem 0; font-style: italic; color: #1a0b0b; font-size: 1.02rem; }
+.testimonial cite { display: block; margin-top: 0.75rem; font-size: 0.85rem; color: #6b5757; font-style: normal; font-family: "Georgia", serif; letter-spacing: 0.03em; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: #8b1a1a; color: #ffffff; padding: 3rem 2rem; margin: 3rem -2rem 0; text-align: center; }
+.stat strong { display: block; font-size: 2.25rem; font-family: "Playfair Display", "Times New Roman", Georgia, serif; color: #d4a017; font-weight: 400; }
+.stat span { font-size: 0.85rem; color: #f3d7d7; letter-spacing: 0.1em; text-transform: uppercase; font-family: "Georgia", serif; }
+
+footer { border-top: 1px solid #e5ddc8; padding: 2.5rem 2.5rem 1.5rem; margin-top: 0; font-size: 0.85rem; color: #6b5757; background: #efe8d6; font-family: "Georgia", serif; }
+footer .footer-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; }
+footer h4 { color: #8b1a1a; font-family: "Playfair Display", "Times New Roman", Georgia, serif; margin: 0 0 0.75rem; font-size: 1rem; font-weight: 400; }
+footer a { color: #6b5757; display: block; padding: 0.2rem 0; }
+footer a:hover { color: #d4a017; }
+footer .legal { max-width: 1140px; margin: 2rem auto 0; padding-top: 1.25rem; border-top: 1px solid #e5ddc8; font-size: 0.78rem; color: #6b5757; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+
+.comment { display: flex; gap: 1rem; padding: 1.25rem; border-bottom: 1px solid #e5ddc8; }
+.comment:last-child { border-bottom: none; }
+.avatar { width: 42px; height: 42px; border-radius: 50%; background: #8b1a1a; color: #d4a017; display: flex; align-items: center; justify-content: center; font-weight: 600; flex-shrink: 0; font-family: "Playfair Display", "Times New Roman", Georgia, serif; }
+.comment-meta { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem; color: #8b1a1a; }
+
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-family: "Georgia", serif; }
+th, td { text-align: left; padding: 0.75rem 0.9rem; border-bottom: 1px solid #e5ddc8; font-size: 0.95rem; }
+th { background: #f3ecd6; font-weight: 600; color: #8b1a1a; letter-spacing: 0.03em; }
+
+.locked-page { max-width: 440px; margin: 4rem auto; }
+.locked-page h1 { text-align: center; }
+.form-wrap { background: #ffffff; border: 1px solid #e5ddc8; border-top: 3px solid #d4a017; padding: 2rem; }
